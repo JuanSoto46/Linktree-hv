@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juan David Soto Garzon</title>
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #020617;
+      --text: #e5e7eb;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      padding: 28px 22px 26px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(15,23,42,0.96), rgba(15,23,42,0.86));
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 999px;
+      margin: 0 auto 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: conic-gradient(from 180deg, #38bdf8, #a855f7, #f97316, #38bdf8);
+      padding: 2px;
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background: #020617;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+      color: #e5e7eb;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      margin-top: 4px;
+      margin-bottom: 18px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .link-btn {
+      display: block;
+      width: 100%;
+      padding: 11px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15,23,42,0.8);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+    }
+
+    .link-btn span {
+      opacity: 0.9;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+      background: rgba(15,23,42,0.95);
+      box-shadow: 0 14px 40px rgba(56,189,248,0.3);
+    }
+
+    .link-btn.github::before,
+    .link-btn.linkedin::before {
+      content: "⬤";
+      display: inline-block;
+      font-size: 0.6rem;
+      margin-right: 8px;
+      opacity: 0.8;
+    }
+
+    .link-btn.github::before {
+      color: #f97316;
+    }
+
+    .link-btn.linkedin::before {
+      color: #38bdf8;
+    }
+
+    .note {
+      margin-top: 4px;
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+
+    .note strong {
+      color: #9ca3af;
+      font-weight: 500;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        margin: 0 14px;
+        padding-inline: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" aria-label="Enlaces profesionales">
+    <div class="avatar" aria-hidden="true">
+      <div class="avatar-inner">
+        JD
+      </div>
+    </div>
+    <h1>Tu Nombre Completo</h1>
+    <p class="subtitle">Desarrollador(a) de software · Estudiante</p>
+
+    <section class="links" aria-label="Lista de enlaces">
+      <a class="link-btn github" href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer">
+        <span>GitHub</span>
+      </a>
+      <a class="link-btn linkedin" href="https://www.linkedin.com/in/TU_PERFIL" target="_blank" rel="noopener noreferrer">
+        <span>LinkedIn</span>
+      </a>
+    </section>
+
+    <p class="note">
+      <strong>Sugerencia:</strong> guarda esta URL y úsala en el código QR de tu hoja de vida.
+    </p>
+  </main>
+</body>
+</html>
